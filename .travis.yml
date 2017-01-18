@@ -1,16 +1,11 @@
 language: php
 
-sudo: false
+php:
+    - '7.0'
+    - '7.1'
 
 cache:
     directories:
-        - vendor
         - $HOME/.composer/cache/files
 
-script: phpunit
-
-matrix:
-    include:
-        - php: 7.0
-        - php: 7.1
-    fast_finish: true
+install: composer update
