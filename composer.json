@@ -1,0 +1,13 @@
+{
+    "name": "jake-fr/twig-set",
+    "description": "Set tag for twig with support of combined operators",
+    "keywords": ["twig"],
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "twig/twig" : "^2.0"
+    },
+    "autoload": {
+        "psr-4": { "JakeFr\\TwigSet\\": "src/" }
+    }
+}

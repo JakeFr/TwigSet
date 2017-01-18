@@ -1,0 +1,12 @@
+<?php
+
+$finder = Symfony\CS\Finder::create()
+    ->in(__DIR__.'/src')
+    ->in(__DIR__.'/test')
+;
+
+return Symfony\CS\Config::create()
+    ->level(Symfony\CS\FixerInterface::SYMFONY_LEVEL)
+    ->fixers(['short_array_syntax', 'empty_return'])
+    ->finder($finder)
+;

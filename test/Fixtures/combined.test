@@ -1,0 +1,13 @@
+--TEST--
+"set" tag with combined operators
+--TEMPLATE--
+{% set foo *= 4 %}
+{% set bar += 3 %}
+
+{{ foo }}
+{{ bar }}
+--DATA--
+return array('foo' => 6, 'bar' => 0);
+--EXPECT--
+24
+3
