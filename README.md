@@ -11,7 +11,7 @@ This librairy requires **Twig 2** and **PHP 7**
 Install via Composer
 
 ``` bash
-$ composer require jakefr/twig-set
+$ composer require jake-fr/twig-set
 ```
 
 Add the extension to twig
