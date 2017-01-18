@@ -8,7 +8,7 @@ class Set extends \Twig_Node
         $capture,
         \Twig_Node $names,
         \Twig_Node $values,
-        array $binaryNode,
+        $binaryNode,
         $lineno,
         $tag = null
     ) {
@@ -77,7 +77,7 @@ class Set extends \Twig_Node
                     $compiler->raw("('' === \$tmp = ");
                 }
                 if ($this->getAttribute('binary_node')) {
-                    $binaryNodeClass = $this->getAttribute('binary_node')['class'];
+                    $binaryNodeClass = $this->getAttribute('binary_node');
 
                     $compiler->subcompile(new $binaryNodeClass($this->getNode('names'), $this->getNode('values'), $this->getNode('names')->getTemplateLine()));
                 } else {

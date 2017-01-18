@@ -10,7 +10,7 @@ class Extension extends \Twig_Extension
     /**
      * Constructor.
      *
-     * @param array $binaryOperators Operators suoorted by tag
+     * @param array $binaryOperators Operators supported by tag (symbol => binary node class)
      */
     public function __construct(array $binaryOperators)
     {

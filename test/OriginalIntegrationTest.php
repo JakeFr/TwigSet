@@ -8,14 +8,14 @@ final class OriginalIntegrationTest extends \Twig_Test_IntegrationTestCase
     {
         return [
             new Extension([
-                '+'  => ['class' => 'Twig_Node_Expression_Binary_Add'],
-                '-'  => ['class' => 'Twig_Node_Expression_Binary_Sub'],
-                '~'  => ['class' => 'Twig_Node_Expression_Binary_Concat'],
-                '*'  => ['class' => 'Twig_Node_Expression_Binary_Mul'],
-                '/'  => ['class' => 'Twig_Node_Expression_Binary_Div'],
-                '//' => ['class' => 'Twig_Node_Expression_Binary_FloorDiv'],
-                '%'  => ['class' => 'Twig_Node_Expression_Binary_Mod'],
-                '**' => ['class' => 'Twig_Node_Expression_Binary_Power'],
+                '+'  => 'Twig_Node_Expression_Binary_Add',
+                '-'  => 'Twig_Node_Expression_Binary_Sub',
+                '~'  => 'Twig_Node_Expression_Binary_Concat',
+                '*'  => 'Twig_Node_Expression_Binary_Mul',
+                '/'  => 'Twig_Node_Expression_Binary_Div',
+                '//' => 'Twig_Node_Expression_Binary_FloorDiv',
+                '%'  => 'Twig_Node_Expression_Binary_Mod',
+                '**' => 'Twig_Node_Expression_Binary_Power',
             ]),
         ];
     }

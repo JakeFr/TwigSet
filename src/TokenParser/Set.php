@@ -12,7 +12,7 @@ class Set extends \Twig_TokenParser
     /**
      * Constructor.
      *
-     * @param array $combinedBinaryOperators
+     * @param array $combinedBinaryOperators symbol => binary node class
      */
     public function __construct(array $combinedBinaryOperators)
     {
